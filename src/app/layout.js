@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Jost } from 'next/font/google';
 import "./globals.css";
 import ChildCom from "./ChildCom";
@@ -23,7 +24,8 @@ export default function RootLayout({ children }) {
       <body
         className={jost.className}
       >
-        <ChildCom children={children}/>
+        <ChildCom children={children} />
+        <SpeedInsights />
       </body>
     </html>
   );
