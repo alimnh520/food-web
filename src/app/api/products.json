@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "meat",
+        "img": "/products/feature-1.jpg.webp",
+        "price": 20,
+        "discount": 4,
+        "listName": "meat"
+    },
+    {
+        "id": 2,
+        "name": "banana",
+        "img": "/products/feature-2.jpg.webp",
+        "price": 3,
+        "discount": 0.2,
+        "listName": "fruit"
+    },
+    {
+        "id": 3,
+        "name": "guava",
+        "img": "/products/feature-3.jpg.webp",
+        "price": 7,
+        "discount": 0,
+        "listName": "fruit"
+    },
+    {
+        "id": 4,
+        "name": "watermelon",
+        "img": "/products/feature-4.jpg.webp",
+        "price": 9,
+        "discount": 0.6,
+        "listName": "fruit"
+    },
+    {
+        "id": 5,
+        "name": "grapes",
+        "img": "/products/feature-5.jpg.webp",
+        "price": 10,
+        "discount": 2,
+        "listName": "fruit"
+    },
+    {
+        "id": 6,
+        "name": "burger",
+        "img": "/products/feature-6.jpg.webp",
+        "price": 5,
+        "discount": 0.3,
+        "listName": "fastfood"
+    },
+    {
+        "id": 7,
+        "name": "mango",
+        "img": "/products/feature-7.jpg.webp",
+        "price": 17,
+        "discount": 2,
+        "listName": "fruit"
+    },
+    {
+        "id": 8,
+        "name": "apple",
+        "img": "/products/feature-8.jpg.webp",
+        "price": 15,
+        "discount": 0.5,
+        "listName": "fruit"
+    },
+    {
+        "id": 9,
+        "name": "burger",
+        "img": "/products/fastfd-1.avif",
+        "price": 6,
+        "discount": 0.8,
+        "listName": "fastfood"
+    },
+    {
+        "id": 10,
+        "name": "fence fry",
+        "img": "/products/fastfd-2.webp",
+        "price": 4,
+        "discount": 0,
+        "listName": "fastfood"
+    },
+    {
+        "id": 11,
+        "name": "fence fry burger",
+        "img": "/products/fastfd-3.webp",
+        "price": 11,
+        "discount": 1,
+        "listName": "fastfood"
+    },
+    {
+        "id": 12,
+        "name": "meat",
+        "img": "/products/getty_80116649_344560.jpg",
+        "price": 15,
+        "discount": 1,
+        "listName": "meat"
+    },
+    {
+        "id": 13,
+        "name": "fresh meat",
+        "img": "/products/GettyImages-Meat.jpeg",
+        "price": 12,
+        "discount": 2,
+        "listName": "meat"
+    },
+    {
+        "id": 14,
+        "name": "combo meat",
+        "img": "/products/lamb-meat.jpg",
+        "price": 17,
+        "discount": 1.3,
+        "listName": "meat"
+    },
+    {
+        "id": 15,
+        "name": "carrot",
+        "img": "/products/vg-tbl-2.jpg",
+        "price": 4,
+        "discount": 0.9,
+        "listName": "vegetable"
+    },
+    {
+        "id": 16,
+        "name": "fresh vegetable",
+        "img": "/products/vg-tbl-4.jpg",
+        "price": 15,
+        "discount": 0.5,
+        "listName": "vegetable"
+    },
+    {
+        "id": 17,
+        "name": "Bitter melon",
+        "img": "/products/vg-tbl-4.webp",
+        "price": 7,
+        "discount": 0.1,
+        "listName": "vegetable"
+    },
+    {
+        "id": 18,
+        "name": "kohlrabi",
+        "img": "/products/vg-tbl-6.jpg",
+        "price": 3,
+        "discount": 0.2,
+        "listName": "vegetable"
+    },
+    {
+        "id": 19,
+        "name": "avocado",
+        "img": "/products/vg-tbl-7.webp",
+        "price": 15,
+        "discount": 0.5,
+        "listName": "vegetable"
+    },
+    {
+        "id": 20,
+        "name": "fresh vegetable",
+        "img": "/products/vgtbl-1.webp",
+        "price": 8,
+        "discount": 1.5,
+        "listName": "vegetable"
+    }
+]
