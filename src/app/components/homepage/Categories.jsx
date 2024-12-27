@@ -7,7 +7,7 @@ const Categories = () => {
     return (
         <div className='w-full flex flex-col gap-x-7 items-end justify-center'>
             <CategoryHead/>
-            <div className="w-9/12 h-full sm:mt-0 mt-8 bg-[url('/homeImage/WeightWatchersatWork2014.jpg')] flex flex-col items-start justify-center p-20 space-y-5 sm:w-full sm:px-2">
+            <div className="w-9/12 h-full sm:mt-0 mt-8 bg-[url('/homeImage/WeightWatchersatWork2014.jpg')] flex flex-col items-start justify-center p-20 space-y-5 sm:w-full sm:px-4">
                 <p className='font-black text-green-700 text-sm'>FRUIT FRESH</p>
                 <p className='text-4xl font-black text-gray-900'>Vegetable <br />
                     100% Organic</p>
