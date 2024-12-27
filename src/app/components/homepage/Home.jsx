@@ -8,7 +8,7 @@ import AboutBlogs from './AboutBlogs'
 
 const Home = () => {
     return (
-        <div className='w-full px-20 py-10 flex flex-col items-center justify-center sm:px-5'>
+        <div className='w-full px-20 py-10 flex flex-col items-center justify-center sm:px-0 sm:py-0'>
             <Categories />
             <HomeSlider />
             <FeaturedProduct />

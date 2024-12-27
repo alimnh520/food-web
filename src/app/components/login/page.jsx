@@ -1,10 +1,7 @@
 'use client'
-import { useRef, useState } from "react";
-import { RxCross1 } from "react-icons/rx";
+import { useState } from "react";
 import { FaRegEye, FaEyeSlash } from "react-icons/fa";
-import { FaFacebookSquare, FaGooglePlusSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaWindows, FaHeart } from "react-icons/fa";
-import { LiaBalanceScaleSolid } from "react-icons/lia";
-import { GoMail } from "react-icons/go";
+import { FaFacebookSquare, FaGooglePlusSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin, FaWindows } from "react-icons/fa";
 
 const page = () => {
     const [isFocused, setIsFocused] = useState(false);
@@ -12,15 +9,7 @@ const page = () => {
     const [hidePass, setHidePass] = useState(false);
     const [mailVal, setMailVal] = useState('');
     const [passVal, setPassVal] = useState('');
-    const [flag, setFlag] = useState('US');
-    const currencySymbol = {
-        US: "$",
-        BD: "৳",
-        IN: "₹",
-        PK: "Rs",
-        SA: "﷼",
-    }
-    const [currency, setCurrency] = useState('US');
+
     const handleFocus = () => {
         setIsFocused(true);
     };
@@ -51,7 +40,7 @@ const page = () => {
                             type="email"
                             onFocus={handleFocus}
                             onBlur={handleBlur}
-                            className={`w-full h-full outline-none border-b-2 border-b-gray-200 bg-transparent`}
+                            className={`w-full h-full outline-none border-b-2 border-b-gray-200 ${mailVal == '' ? 'bg-transparent': 'bg-white'}`}
                             value={mailVal}
                             onChange={(e) => setMailVal(e.target.value)}
                         />
@@ -62,7 +51,7 @@ const page = () => {
                             type={`${hidePass ? "text" : "password"}`}
                             onFocus={handleFocusPass}
                             onBlur={handleBlurPass}
-                            className={`w-full h-full outline-none border-b-2 border-b-gray-200 bg-transparent`}
+                            className={`w-full h-full outline-none border-b-2 border-b-gray-200 ${passVal == '' ? 'bg-transparent': 'bg-white'}`}
                             value={passVal}
                             onChange={(e) => setPassVal(e.target.value)}
                         />

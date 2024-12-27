@@ -16,17 +16,17 @@ const TopHead = () => {
         setFlag(e.target.value);
     }
     return (
-        <div className="w-full px-20 h-10 bg-gray-100 flex items-center justify-between sm:flex-col sm:h-16 sm:items-start sm:px-5">
-            <div className="flex items-center justify-center space-x-5 group sm:space-x-3 sm:w-full sm:justify-between">
-                <Link href="http://alimnh412@gmail.com" target='blank' className="flex items-center justify-center space-x-2 ">
-                    <IoIosMail className='text-xl group-hover:text-blue-600' />
+        <div className="w-full px-20 h-10 bg-gray-100 flex items-center justify-between sm:flex-col sm:h-16 sm:items-start sm:px-1">
+            <div className="flex items-center justify-center space-x-5 group sm:space-x-2 sm:w-full sm:justify-between">
+                <Link href="http://alimnh412@gmail.com" target='blank' className="flex items-center justify-center space-x-2 sm:space-x-1">
+                    <IoIosMail className='text-xl group-hover:text-blue-600 sm:text-base' />
                     <p className='text-sm group-hover:text-red-500 sm:text-xs'>alimnh412@gmail.com</p>
                 </Link>
                 <div className="h-6 w-px bg-gray-300 sm:hidden"></div>
                 <p className='text-sm sm:text-xs'>Free Shipping for all Order of $99</p>
             </div>
-            <div className="flex h-full items-center justify-center space-x-4 sm:space-x-3">
-                <div className="flex items-center justify-center space-x-4 sm:space-x-3">
+            <div className="flex h-full items-center justify-center space-x-4 sm:space-x-2">
+                <div className="flex items-center justify-center space-x-4 sm:space-x-2">
                     <Link href="" className='hover:text-blue-800'><FaFacebookF /></Link>
                     <Link href="" className='hover:text-blue-600'><FaTwitter /></Link>
                     <Link href="" className='hover:text-blue-700'><FaLinkedin /></Link>

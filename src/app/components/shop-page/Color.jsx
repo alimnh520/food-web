@@ -4,7 +4,7 @@ import React from 'react'
 
 const Color = () => {
     return (
-        <div className="flex flex-col items-start justify-start mt-10">
+        <div className="flex flex-col items-start justify-start mt-10 sm:mt-0">
             <p className='text-3xl font-bold'>Colors</p>
             <div className="h-40 w-full grid gap-x-5 grid-rows-3 grid-cols-2 mt-3">
                 <Link href="" className="flex items-center justify-start space-x-3">

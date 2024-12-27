@@ -14,7 +14,7 @@ import ProductSlider from './ProductSlider';
 const TopRated = () => {
     return (
         <div className="h-full relative">
-            <div className="w-full flex items-center justify-between">
+            <div className="w-full flex items-center justify-between sm:px-2">
                 <p className='text-2xl font-black'>Latest Products</p>
 
                 <div className="custom-next flex size-8 text-2xl text-gray-400 items-center justify-center border border-gray-400 hover:bg-gray-400 hover:text-white transition-all duration-400 shadow-lg absolute right-0 z-10 cursor-pointer"><IoIosArrowForward /></div>

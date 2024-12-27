@@ -38,7 +38,7 @@ const CategoryHead = () => {
                         <IoIosArrowDown className={`mt-0.5 ml-1`} />
                     </div>
                     <input type="text" className='h-full w-7/12 px-5 outline-none text-gray-500 sm:px-2' placeholder='What do you need?' />
-                    <button className='h-full w-2/12 bg-green-600 text-sm font-bold uppercase text-white hover:bg-transparent  hover:text-green-600 border-l hover:border-gray-200 sm:w-auto sm:px-2'>Search</button>
+                    <button className='h-full w-2/12 bg-green-600 text-sm font-bold uppercase text-white hover:bg-transparent  hover:text-green-600 border-l hover:border-gray-200 sm:w-auto sm:px-3'>Search</button>
                 </div>
                 <div className="h-full w-3/12 flex space-x-5 items-center justify-center sm:w-full sm:justify-start sm:py-2">
                     <Link href="" className="flex items-center justify-center  bg-gray-200 size-12 rounded-full text-lg" >

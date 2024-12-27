@@ -26,11 +26,11 @@ const AllProduct = ({ rangeOne, rangeTwo }) => {
                 </button>
             </div>
 
-            <div className='w-full grid grid-cols-3 gap-7'>
+            <div className='w-full grid grid-cols-3 sm:grid-rows-1 sm:grid-cols-none gap-7 sm:gap-0 sm:space-y-5 sm:h-[600px] sm:overflow-y-scroll'>
                 {
                     searchPrice.map((currElm) => {
                         return (
-                            <div className="h-96 relative group" key={currElm.id}>
+                            <div className="h-96 sm:h-80 relative group" key={currElm.id}>
                                 <img src={currElm.img} alt="" className='h-64 w-full object-cover object-center' />
                                 <p className='text-lg text-center mt-2 capitalize'>{currElm.name}</p>
                                 <div className="flex items-center justify-center space-x-5">

@@ -12,14 +12,14 @@ import { IoCartOutline } from 'react-icons/io5';
 
 const ProductSlide = () => {
     return (
-        <div className="w-full h-96 mt-16">
+        <div className="w-full h-96 mt-16 sm:h-80">
             <Swiper
                 autoplay={{
                     delay: 6000,
                     disableOnInteraction: false,
                 }}
                 modules={[Pagination, Mousewheel, Keyboard, Autoplay]}
-                slidesPerView={3}
+                slidesPerView={window.innerWidth < 1024 ? 1 : 3}
                 spaceBetween={30}
                 loop
                 className=" w-full h-full flex items-center justify-center relative"
