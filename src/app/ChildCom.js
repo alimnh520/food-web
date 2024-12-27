@@ -20,8 +20,9 @@ const ChildCom = ({ children }) => {
 
     if (loader) {
         return (
-            <div className="w-full h-screen flex items-center justify-center bg-red-300 text-4xl font-bold">
-                <h1>Loading your page....</h1>
+            <div className="w-full h-screen flex flex-col items-center justify-center">
+                <img src='/06-loader_telega.gif' className='w-60'/>
+                <div className="page-loader"></div>
             </div>
         )
     }
