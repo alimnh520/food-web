@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className='w-full flex flex-col bg-red-50 relative'>
             <TopHead />
-            <div className="h-10 w-28 bg-gray-600 absolute right-5 top-20 cursor-pointer text-lg font-bold text-white hidden sm:flex items-center justify-between px-2 sm:right-0" onClick={() => setNav(!showNav)}>
+            <div className="h-10 w-28 bg-gray-600 absolute right-5 top-20 cursor-pointer text-lg font-bold text-white hidden sm:flex items-center justify-between px-2 sm:right-0 sm:top-[75px]" onClick={() => setNav(!showNav)}>
                 MENU
                 <GiHamburgerMenu className='text-2xl'/>
             </div>

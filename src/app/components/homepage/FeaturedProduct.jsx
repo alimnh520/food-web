@@ -8,7 +8,7 @@ const FeaturedProduct = () => {
 
     const btnCls = `text-lg relative before:absolute before:content-[""] before:h-0.5 before:hover:w-full before:bg-green-600 before:-bottom-0 before:transition-all before:duration-300`
     return (
-        <div className='w-full mt-20 flex flex-col items-center justify-center sm:mt-10'>
+        <div className='w-full mt-20 flex flex-col items-center justify-center sm:mt-10 sm:px-2'>
             <p className='text-5xl flex items-center justify-center font-bold relative before:absolute before:content-[""] before:h-1 before:w-28 before:bg-green-600 before:-bottom-7 sm:text-3xl'>Featured Product</p>
 
             <div className="flex space-x-6 items-center justify-center mt-16 sm:w-full sm:mt-10 sm:justify-between sm:space-x-2 sm:text-xs">

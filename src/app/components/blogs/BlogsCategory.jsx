@@ -3,11 +3,11 @@ import React from 'react'
 import { IoIosSearch } from "react-icons/io";
 import ReviewProduct from '../homepage/ReviewProduct';
 
-const BlogsCategory = () => {
+const BlogsCategory = ({showShop}) => {
     return (
-        <div className='w-4/12 py-10 flex flex-col items-start'>
+        <div className={`w-4/12 py-10 flex flex-col items-start sm:w-full sm:h-[600px] sm:overflow-y-scroll sm:px-5 sm:pb-5 sm:absolute sm:z-20 sm:top-0 sm:bg-white transition-all duration-300 border-t border-t-gray-300 ${showShop ? '-left-full' : 'left-0'}`}>
             <div className="w-full h-12 flex items-center justify-center relative">
-                <input type="text" placeholder='Search...' className='border border-gray-400 outline-none h-full w-full px-4 rounded-full' />
+                <input type="text" placeholder='Search...' className='border border-gray-400 outline-none h-full w-full px-4 rounded-full sm:h-12' />
                 <Link href="" className=' absolute right-5 text-2xl z-10 opacity-50'><IoIosSearch /></Link>
             </div>
 
