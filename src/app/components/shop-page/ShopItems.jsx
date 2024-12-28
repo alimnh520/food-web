@@ -8,6 +8,7 @@ import Color from './Color';
 import Size from './Size';
 import LatestProduct from '../homepage/LatestProduct';
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { FaAngleDoubleLeft } from "react-icons/fa";
 
 const ShopItems = () => {
     const [rangeOne, setRangeOne] = useState(1);
@@ -15,7 +16,7 @@ const ShopItems = () => {
     const [showShop, setShowShop] = useState(true);
     return (
         <div className='w-full px-20 flex items-start justify-between mt-20 sm:mt-0 sm:px-1 sm:flex-col sm:justify-center sm:space-y-10 relative'>
-            <div className=" hidden absolute sm:flex size-10 rounded-full bg-red-500 right-5 top-10 z-30 items-center justify-center text-lg font-bold text-gray-300 hover:text-white transition-all duration-300" onClick={() => setShowShop(!showShop)}><FaAngleDoubleRight /></div>
+            <div className=" hidden absolute sm:flex size-10 rounded-full bg-red-500 right-5 top-10 z-30 items-center justify-center text-lg font-bold text-gray-300 hover:text-white transition-all duration-300" onClick={() => setShowShop(!showShop)}>{showShop ? <FaAngleDoubleRight /> : <FaAngleDoubleLeft />}</div>
             <div className={`w-3/12 flex flex-col items-start sm:w-full sm:h-[600px] sm:overflow-y-scroll sm:px-5 sm:pb-5 sm:absolute sm:z-20 sm:top-0 sm:bg-white transition-all duration-300 ${showShop ? '-left-full' : 'left-0'}`}>
                 <p className='text-3xl font-bold'>Department</p>
                 <div className="flex w-full flex-col items-start space-y-3 mt-5 text-lg">

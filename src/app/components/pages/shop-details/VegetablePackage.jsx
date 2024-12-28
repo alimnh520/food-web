@@ -27,13 +27,13 @@ const VegetablePackage = () => {
         }
     }
     return (
-        <div className="w-full mt-16 px-20 flex gap-y-5 flex-col items-center justify-center">
-            <div className='w-full h-[550px] grid gap-x-8 grid-cols-2 grid-rows-1'>
+        <div className="w-full mt-16 px-20 flex gap-y-5 flex-col items-center justify-center sm:px-5 sm:mt-10">
+            <div className='w-full h-[550px] grid gap-x-8 grid-cols-2 grid-rows-1 sm:h-auto sm:grid-cols-1 sm:grid-rows-1 sm:gap-x-0 sm:space-y-3'>
                 <div className="">
                     <img src="/products/product-details-1.jpg.webp" alt="" className='h-full w-full object-cover object-center' />
                 </div>
                 <div className="h-full text-gray-700 flex flex-col items-start space-y-6">
-                    <p className='text-4xl font-extrabold'>Vegetable’s Package</p>
+                    <p className='text-4xl font-extrabold sm:text-2xl'>Vegetable’s Package</p>
                     <div className="flex items-center justify-center space-x-1 text-yellow-400">
                         <FaStar />
                         <FaStar />
@@ -85,18 +85,18 @@ const VegetablePackage = () => {
                     </div>
                 </div>
             </div>
-            <div className="w-full relative h-32 flex items-center space-x-10 justify-start">
-                <div className="w-1/2 h-full flex items-center justify-center">
+            <div className="w-full relative h-32 flex items-center space-x-10 justify-start sm:flex-col sm:h-auto sm:space-x-0">
+                <div className="w-1/2 h-full flex items-center justify-center sm:w-full">
                     <Swiper
                         autoplay={{
                             delay: 6000,
                             disableOnInteraction: false,
                         }}
                         modules={[Pagination, Mousewheel, Keyboard, Autoplay]}
-                        slidesPerView={4}
-                        spaceBetween={30}
+                        slidesPerView={window.innerWidth < 1024 ? 2 : 4}
+                        spaceBetween={window.innerWidth < 1024 ? 10 : 30}
                         loop
-                        className="w-full h-full"
+                        className="w-full h-full sm:h-40"
                     >
                         {
                             latestItems.map((currElm) => {

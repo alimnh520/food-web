@@ -7,9 +7,9 @@ import Link from 'next/link'
 
 const RelatedProduct = () => {
     return (
-        <div className='w-full px-20 flex flex-col items-center'>
-            <p className='text-5xl flex items-center justify-center font-bold relative before:absolute before:content-[""] before:h-1 before:w-28 before:bg-green-600 before:-bottom-7'>Related Product</p>
-            <div className="w-full h-80 mt-20 grid gap-x-5 grid-cols-4 grid-rows-1">
+        <div className='w-full px-20 flex flex-col items-center sm:px-5 sm:mt-5'>
+            <p className='text-5xl flex items-center justify-center font-bold relative before:absolute before:content-[""] before:h-1 before:w-28 before:bg-green-600 before:-bottom-7 sm:text-3xl'>Related Product</p>
+            <div className="w-full h-80 mt-20 grid gap-x-5 grid-cols-4 grid-rows-1 sm:gap-x-0 sm:mt-10 sm:grid-cols-1 sm:grid-rows-4 sm:h-auto">
                 {
                     productItems.slice(0, 4).map((currElm) => {
                         return (

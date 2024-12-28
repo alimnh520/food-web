@@ -5,7 +5,7 @@ import CopyRights from './CopyRights'
 
 const Footer = () => {
     return (
-        <div className='w-full px-20 pt-10 mt-20 bg-zinc-100 sm:px-1 sm:mt-5'>
+        <div className='w-full px-20 pt-10 mt-20 bg-zinc-100 sm:px-5 sm:mt-5'>
             <div className="w-full grid grid-cols-3 font-normal sm:grid-cols-1 sm:grid-rows-3">
                 <div className="flex flex-col space-y-4 w-full">
                     <img src="/Footer/logo.png.webp" alt="" className='w-36 mb-3' />

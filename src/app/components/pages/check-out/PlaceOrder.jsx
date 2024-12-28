@@ -8,7 +8,7 @@ const PlaceOrder = () => {
     ];
     
     return (
-        <div className="w-1/3 px-8 py-6 flex flex-col items-start bg-gray-200">
+        <div className="w-1/3 px-8 py-6 flex flex-col items-start bg-gray-200 sm:w-full">
             <p className='w-full py-3 text-2xl font-extrabold border-b border-b-gray-300'>Your Order</p>
 
             <form action="" method='POST' className='w-full mt-5 space-y-5'>

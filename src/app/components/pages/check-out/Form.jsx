@@ -2,7 +2,7 @@ import React from 'react'
 
 const Form = () => {
     return (
-        <form action="" method='POST' className='w-2/3 space-y-5'>
+        <form action="" method='POST' className='w-2/3 space-y-5 sm:w-full'>
             <div className="w-full flex items-center justify-between space-x-10">
                 <div className="w-1/2 flex flex-col items-start">
                     <p className='text-lg py-2'>Fist Name<span className='text-red-500'>*</span></p>
