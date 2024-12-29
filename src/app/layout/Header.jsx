@@ -6,8 +6,10 @@ import { FaHeart } from "react-icons/fa";
 import { MdShoppingCart } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Pages from './Pages';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+    const pathName = usePathname();
     const [showNav, setNav] = useState(false);
     let itemsPrice = 0;
     const cartItem = 0;
@@ -24,14 +26,14 @@ const Header = () => {
             <div className={`w-full px-20 h-16 flex items-center justify-between transition-all duration-300 ${showNav ? "sm:h-80" : "sm:h-14"} sm:overflow-hidden sm:justify-start sm:flex-col sm:items-start sm:px-2`}>
                 <img src="/header/logo.png.webp" alt="" />
                 <ul className={`flex items-center justify-center space-x-5 font-semibold text-sm sm:flex-col sm:items-start sm:space-y-5 sm:space-x-0 sm:w-full sm:pt-5`}>
-                    <li><Link href="/" className={`${linkCls}`} onClick={() => setNav(!showNav)}>Home</Link></li>
-                    <li><Link href="/components/shop-page" className={`${linkCls} transition-all duration-500`} onClick={() => setNav(!showNav)}>Shop</Link></li>
-                    <li className={`${linkCls} group relative cursor-pointer`}>
+                    <li><Link href="/" className={`${linkCls} ${pathName == '/' ? 'text-green-600' : 'text-black'}`} onClick={() => setNav(!showNav)}>Home</Link></li>
+                    <li><Link href="/components/shop-page" className={`${linkCls} ${pathName == '/components/shop-page' ? 'text-green-600' : 'text-black'} transition-all duration-500`} onClick={() => setNav(!showNav)}>Shop</Link></li>
+                    <li className={`${linkCls} ${pathName == '/components/pages/shop-details' || pathName == '/components/pages/check-out' ? 'text-green-600' : 'text-black'} group relative cursor-pointer`}>
                         pages
                         <Pages setNav={setNav} showNav={showNav}/>
                     </li>
-                    <li><Link href="/components/blogs" className={`${linkCls}`} onClick={() => setNav(!showNav)}>blogs</Link></li>
-                    <li><Link href="/components/contact" className={`${linkCls}`} onClick={() => setNav(!showNav)}>contact</Link></li>
+                    <li><Link href="/components/blogs" className={`${linkCls} ${pathName == '/components/blogs' ? 'text-green-600' : 'text-black'}`} onClick={() => setNav(!showNav)}>blogs</Link></li>
+                    <li><Link href="/components/contact" className={`${linkCls} ${pathName == '/components/contact' ? 'text-green-600' : 'text-black'}`} onClick={() => setNav(!showNav)}>contact</Link></li>
                 </ul>
                 <div className="flex items-center justify-center space-x-5 sm:py-5">
                     <Link href="" className="flex items-center justify-center relative group">
